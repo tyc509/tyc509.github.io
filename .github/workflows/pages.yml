@@ -29,10 +29,14 @@ jobs:
         run: |
           cd hexo_blog
           npm install
+      - name: Check if hexo is installed
+        run: |
+          cd hexo_blog
+          which hexo
       - name: Build
         run: |
           cd hexo_blog
-          npm run build
+          npx hexo generate
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
