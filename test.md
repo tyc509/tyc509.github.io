@@ -1,8 +1,4 @@
----
-title: docker容器热迁移
-date: 2024-10-26 18:06:08
-tags:
----
+# docker容器热迁移问题  
 实验环境：虚拟机ubuntu 16.04，内核版本4.15，docker17.03 
 ## 1.docker pull镜像：docker: Get https://registry-1.docker.io/v2/: net/http: request canceled  
 答案：网络连接问题，1.使用镜像源；2.虚拟机使用代理；3.手动下载.tar文件，然后加载  
