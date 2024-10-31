@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Hexo_TYC
+subtitle: 'specify and wird'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: tyc
+language: zh-CN
 timezone: ''
 
 # URL
@@ -103,3 +103,10 @@ theme: hexo-theme-Chic
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10
